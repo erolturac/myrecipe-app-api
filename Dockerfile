@@ -9,7 +9,6 @@ COPY ./requirements.dev.txt /tmp/requirements.dev.txt
 COPY ./app /app
 WORKDIR /app
 EXPOSE 8080
-ENTRYPOINT [ "executable" ]
 
 ARG DEV=false
 RUN python -m venv /py && \
